@@ -1,10 +1,17 @@
-# Happy Room Designer
+# Happy Room Designer 🛋
 
 <img src="https://raw.githubusercontent.com/hellomkreyes/room-builder-app/master/docs/happy-room-designer.png" alt="The Endy web team as interior designers">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting Started 👋
+
+1. Clone the repo locally
+1. Run `npm i`
+1. Run `npm start` to boot up the local server!
+1. Happy developing! ✨
+
+## Available Scripts 💻
 
 In the project directory, you can run:
 
