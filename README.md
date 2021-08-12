@@ -1,6 +1,6 @@
 # Happy Room Designer 🛋
 
-<img src="https://raw.githubusercontent.com/hellomkreyes/room-builder-app/master/docs/happy-room-designer.png" alt="The Endy web team as interior designers">
+<img src="//raw.githubusercontent.com/hellomkreyes/room-builder-app/master/docs/happy-room-designer.png" alt="The Endy web team as interior designers">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
