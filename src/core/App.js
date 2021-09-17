@@ -6,7 +6,7 @@ import {
   ThumbnailButton
 } from '../common/components/atoms'
 import { Header } from '../common/components/molecules'
-import { Footer } from '../common/components/organisms'
+import { Footer } from '../common/components/molecules'
 
 const App = () => {
   return (
