@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 const StyledTextComponent = styled.div`
 	background-color: peachpuff;
+	width: 40%;
+	margin: 0 auto;
+	padding: 15px 25px;
 `
 
 export const TextComponent = () => {
