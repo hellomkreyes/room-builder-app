@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Button, TextComponent, Anchor } from '../common/components/atoms'
+import { Footer } from '../common/components/organisms'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           text="I'm a text anchor" 
           classes="text-gravy"
         />
+        <Footer />
     </div>
   );
 }
