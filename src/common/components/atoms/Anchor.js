@@ -10,7 +10,7 @@ const StyledAnchor = styled.a`
 
 export const Anchor = ({text, href, classes, img}) => {
   return (
-    <StyledAnchor href={href} className={classes} target="_blank" rel="noreferrer">
+    <StyledAnchor href={href} target="_blank" rel="noreferrer">
       { img ? <img src={img} alt={text}/> : text}
     </StyledAnchor>
   )
@@ -19,6 +19,5 @@ export const Anchor = ({text, href, classes, img}) => {
 Anchor.propTypes = {
   href: PropTypes.string,
   label: PropTypes.string,
-  classes: PropTypes.string,
   img: PropTypes.string
 }

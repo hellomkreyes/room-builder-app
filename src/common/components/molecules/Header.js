@@ -17,8 +17,7 @@ export const Header = () => {
         <StyledHeader>
             <Anchor          
                 href="https://endy.com" 
-                img={endyLogo}
-                classes="width-100" />
+                img={endyLogo} />
             <h1>Happy Room Designer (Endy Edition)</h1>
             <Button label="Instructions" />
         </StyledHeader>

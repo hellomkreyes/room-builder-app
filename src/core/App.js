@@ -9,17 +9,6 @@ const App = () => {
         <Header />
         <TextComponent />
         <Button label="Click me please!" />
-        <Anchor 
-          href="https://endy.com" 
-          text="I am an anchor" 
-          img="http://placekitten.com/g/200/200"
-          classes="width-100"
-        />
-        <Anchor 
-          href="https://endy.com" 
-          text="I'm a text anchor" 
-          classes="text-gravy"
-        />
     </div>
   );
 }
