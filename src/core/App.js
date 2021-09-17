@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Button, TextComponent, Anchor } from '../common/components/atoms'
-import { Footer } from '../common/components/organisms'
+import { Footer } from '../common/components/molecules'
 
 const App = () => {
   return (
