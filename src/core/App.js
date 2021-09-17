@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
+      <Button label="Click me please!" />
     </div>
   );
 }
