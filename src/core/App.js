@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Button, Header, TextComponent, Anchor } from '../common/components/atoms'
+import { Button, TextComponent, Anchor } from '../common/components/atoms'
+import { Header } from '../common/components/molecules'
 
 const App = () => {
   return (
