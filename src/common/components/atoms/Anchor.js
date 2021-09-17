@@ -8,7 +8,7 @@ const StyledAnchor = styled.a`
   }
 `
 
-export const Anchor = ({text, href, classes, img}) => {
+export const Anchor = ({text, href, img}) => {
   return (
     <StyledAnchor href={href} target="_blank" rel="noreferrer">
       { img ? <img src={img} alt={text}/> : text}
