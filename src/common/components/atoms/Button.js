@@ -8,12 +8,11 @@ export const Button = ({onClick, label, ...rest}) => {
     )
 }
 
-// IconButton.propTypes = {
+// Button.propTypes = {
 //     onClick: PropTypes.func,
-//     icon: PropTypes.string.isRequired,
-//     label: PropTypes.string
+//     label: PropTypes.string.isRequired
 // }
 
-// IconButton.defaultProps = {
-// label: ''
+// Button.defaultProps = {
+//  label: 'Click me!'
 // }
