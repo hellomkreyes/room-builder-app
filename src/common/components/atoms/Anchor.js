@@ -1,17 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-export const Anchor = ({text, href, classes, img}) => {
+const StyledAnchor = styled.a`
+  img {
+    height: 50px;
+  }
+`
+
+export const Anchor = ({text, href, img}) => {
   return (
-    <a href={href} class={classes} target="_blank" rel="noreferrer">
+    <StyledAnchor href={href} target="_blank" rel="noreferrer">
       { img ? <img src={img} alt={text}/> : text}
-    </a>
+    </StyledAnchor>
   )
 }
 
 Anchor.propTypes = {
   href: PropTypes.string,
   label: PropTypes.string,
-  classes: PropTypes.string,
   img: PropTypes.string
 }
