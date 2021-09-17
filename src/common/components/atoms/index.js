@@ -1,4 +1,4 @@
-export * from './Button'
 export * from './Anchor'
+export * from './Button'
 export * from './TextComponent'
-export * from './Thumbnail'
+export * from './ThumbnailButton'

@@ -1,37 +1,37 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { 
-  Anchor,
+import {
   Button, 
   TextComponent,
-  Thumbnail
+  ThumbnailButton
 } from '../common/components/atoms'
+import { Header } from '../common/components/molecules'
 import { Footer } from '../common/components/organisms'
 
 const App = () => {
   return (
     <div className="App">
-      <header>
-        <h1>Happy Room Designer (Endy Edition)</h1>
-      </header>
+        <Header />
         <TextComponent />
         <Button label="Click me please!" />
-        <Anchor 
-          href="https://endy.com" 
-          text="I am an anchor" 
-          img="http://placekitten.com/g/200/200"
-          classes="width-100"
-        />
-        <Anchor 
-          href="https://endy.com" 
-          text="I'm a text anchor" 
-          classes="text-gravy"
-        />
+        <div>
+          <ThumbnailButton
+            onClick={() => console.log('I have been clicked')}
+            image="http://placekitten.com/g/60/60"
+            alt="A thumbnail icon of a kitty."
+          />
+          <ThumbnailButton
+            onClick={() => console.log('I have been clicked 2')}
+            image="http://placekitten.com/g/60/60"
+            alt="A thumbnail icon of a kitty."
+          />
+          <ThumbnailButton
+            onClick={() => console.log('I have been clicked 3')}
+            image="http://placekitten.com/g/60/60"
+            alt="A thumbnail icon of a kitty."
+          />
+        </div>
         <Footer />
-        <Thumbnail
-          image="http://placekitten.com/g/60/60"
-          alt="A thumbnail icon of a kitty."
-        />
     </div>
   );
 }
