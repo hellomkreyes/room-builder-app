@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './common/index.css';
 import App from './core/App';
+import Normalize from './core/theme/Normalize';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Normalize />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

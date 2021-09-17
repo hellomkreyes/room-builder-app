@@ -1,12 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Button, Anchor } from '../common/components/atoms'
+import { Button, TextComponent, Anchor } from '../common/components/atoms'
 
 const App = () => {
   return (
     <div className="App">
       <header>
         <h1>Happy Room Designer (Endy Edition)</h1>
+      </header>
+        <TextComponent />
         <Button label="Click me please!" />
         <Anchor 
           href="https://endy.com" 
@@ -19,7 +21,6 @@ const App = () => {
           text="I'm a text anchor" 
           classes="text-gravy"
         />
-      </header>
     </div>
   );
 }
