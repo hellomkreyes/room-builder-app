@@ -9,6 +9,7 @@ const App = () => {
         <h1>Happy Room Designer (Endy Edition)</h1>
         <Button label="Click me please!" />
       </header>
+      {/* <TextComponent /> */}
     </div>
   );
 }
