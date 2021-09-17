@@ -1,6 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Button, TextComponent, Anchor } from '../common/components/atoms'
+import { 
+  Anchor,
+  Button, 
+  TextComponent,
+  Thumbnail
+} from '../common/components/atoms'
 import { Footer } from '../common/components/organisms'
 
 const App = () => {
@@ -23,6 +28,10 @@ const App = () => {
           classes="text-gravy"
         />
         <Footer />
+        <Thumbnail
+          image="http://placekitten.com/g/60/60"
+          alt="A thumbnail icon of a kitty."
+        />
     </div>
   );
 }
