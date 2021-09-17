@@ -1,6 +1,7 @@
 import logo from '../logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Button } from '../common/components/atoms'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React!
         </a>
+        <Button label="Click me please!" />
       </header>
     </div>
   );
