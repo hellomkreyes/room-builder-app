@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Button, TextComponent, Anchor } from '../common/components/atoms'
+import { Button, TextComponent, Anchor, Icon } from '../common/components/atoms'
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
           text="I'm a text anchor" 
           classes="text-gravy"
         />
+        <Icon/>
     </div>
   );
 }
