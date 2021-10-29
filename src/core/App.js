@@ -1,16 +1,18 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Button, TextComponent, Anchor } from '../common/components/atoms'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Nav, Footer } from '../common/components/molecules'
+import { LandingPage, RoomBuilder  } from '../common/pages';
 
 const App = () => {
   return (
-    <div className="App">
+    <Router>
+      <>
         <Nav />
-        <TextComponent />
-        <Button label="Click me please!" />
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/room-builder" component={RoomBuilder} />
         <Footer />
-    </div>
+      </>
+    </Router>
   );
 }
 
