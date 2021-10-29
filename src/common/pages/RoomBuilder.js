@@ -1,3 +1,4 @@
+import { CategoriesDropdown } from '../components/atoms'
 import { RoomViewer } from "../components/organisms"
 import { Toolbar } from "../components/molecules"
 import styled from "styled-components"
@@ -13,6 +14,12 @@ export const RoomBuilder = () => {
         <StyledRoomBuilder>
             <RoomViewer />
             <Toolbar />
+            <CategoriesDropdown type="furniture">
+                <option value="one">Seating</option>
+                <option value="two">Lighting</option>
+                <option value="three">Tables</option>
+                <option value="three">Rugs</option>
+            </CategoriesDropdown>
         </StyledRoomBuilder>
     )
 }
