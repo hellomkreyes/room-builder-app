@@ -19,7 +19,7 @@ export const Nav = () => {
                 href="https://endy.com" 
                 img={endyLogo} />
             <h1>Happy Room Designer (Endy Edition)</h1>
-            <Button label="Instructions" />
+            <Button label="Instructions" plain />
         </StyledNav>
     )
 }
