@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const StyledButton = styled.button`
     display: inline-block;
@@ -19,15 +19,21 @@ const StyledButton = styled.button`
     background-color: #c40058;
     color: #fff;
 
+    ${({plain}) => plain && css`
+        border: none;
+        background-color: transparent;
+        color: #222;
+    `}
+
     &:hover, &:focus {
         background-color: transparent;
         color: #c40058;
     }
 `
 
-export const Button = ({onClick, label, ...rest}) => {
+export const Button = ({onClick, label, plain, ...rest}) => {
     return (
-        <StyledButton onClick={onClick} aria-pressed="false">
+        <StyledButton onClick={onClick} aria-pressed="false" plain={plain}>
             { label }
         </StyledButton>
     )
@@ -35,7 +41,8 @@ export const Button = ({onClick, label, ...rest}) => {
 
 Button.propTypes = {
     onClick: PropTypes.func,
-    label: PropTypes.string.isRequired
+    label: PropTypes.string.isRequired,
+    plain: PropTypes.bool,
 }
 
 Button.defaultProps = {
