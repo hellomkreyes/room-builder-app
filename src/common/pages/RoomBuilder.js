@@ -1,5 +1,9 @@
+import { RoomViewer } from "../components/organisms"
+
 export const RoomBuilder = () => {
-    return(
-        <main>THIS IS THE ROOM BUILDER PAGE</main>
+    return (
+        <>
+            <RoomViewer />
+        </>
     )
 }
