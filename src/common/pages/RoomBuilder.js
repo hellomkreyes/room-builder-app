@@ -1,12 +1,25 @@
-import {
-    Option
-} from '../components/atoms'
+import { Option } from '../components/atoms'
+import { RoomViewer } from "../components/organisms"
+import { Toolbar } from "../components/molecules"
+import styled from "styled-components"
+
+const StyledRoomBuilder = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 export const RoomBuilder = () => {
-    return(
-        <>
-            <main>THIS IS THE ROOM BUILDER PAGE</main>
-            <Option />
-        </>
+    return (
+        <StyledRoomBuilder>
+            <RoomViewer />
+            <Toolbar />
+            <Option type="furniture">
+                <option value="one">Seating</option>
+                <option value="two">Lighting</option>
+                <option value="three">Tables</option>
+                <option value="three">Rugs</option>
+            </Option>
+        </StyledRoomBuilder>
     )
 }
