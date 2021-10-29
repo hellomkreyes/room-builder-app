@@ -1,4 +1,5 @@
-import { RoomViewer, Toolbar } from "../components/organisms"
+import { RoomViewer } from "../components/organisms"
+import { Toolbar } from "../components/molecules"
 import styled from "styled-components"
 
 const StyledRoomBuilder = styled.div`
