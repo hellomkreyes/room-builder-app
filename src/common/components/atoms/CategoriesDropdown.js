@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-export const Option = ({ type, children }) => {
+export const CategoriesDropdown = ({ type, children }) => {
   return(
     <div>
       <label htmlFor={type}>Choose a category:</label>
@@ -13,7 +13,7 @@ export const Option = ({ type, children }) => {
   );
 }
 
-Option.propTypes = {
+CategoriesDropdown.propTypes = {
   type: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 }

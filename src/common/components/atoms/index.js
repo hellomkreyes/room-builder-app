@@ -1,5 +1,5 @@
 export * from './Anchor'
 export * from './Button'
-export * from './Option'
+export * from './CategoriesDropdown'
 export * from './TextComponent'
 export * from './ThumbnailButton'
