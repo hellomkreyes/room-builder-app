@@ -3,14 +3,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import {
   Button, 
   TextComponent,
-  ThumbnailButton
+  ThumbnailButton,
+  Anchor
 } from '../common/components/atoms'
-import { Header, Footer } from '../common/components/molecules'
+import { Nav, Footer } from '../common/components/molecules'
 
 const App = () => {
   return (
     <div className="App">
-        <Header />
+        <Nav />
         <TextComponent />
         <Button label="Click me please!" />
         <div>
