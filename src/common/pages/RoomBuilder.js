@@ -1,5 +1,5 @@
 export const RoomBuilder = () => {
     return(
-        <main>TESTING</main>
+        <main>THIS IS THE ROOM BUILDER PAGE</main>
     )
 }

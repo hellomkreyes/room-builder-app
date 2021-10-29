@@ -6,12 +6,12 @@ import { LandingPage, RoomBuilder  } from '../common/pages';
 const App = () => {
   return (
     <Router>
-      <>
+      <div className="App">
         <Nav />
         <Route exact path="/" component={LandingPage} />
         <Route path="/room-builder" component={RoomBuilder} />
         <Footer />
-      </>
+      </div>
     </Router>
   );
 }
