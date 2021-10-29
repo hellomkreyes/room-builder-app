@@ -3,7 +3,7 @@ import { Button, Anchor} from '../atoms'
 import endyLogo from '../../../assets/endy-logo.svg'
 import styled from 'styled-components';
 
-const StyledHeader = styled.header`
+const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,14 +12,14 @@ const StyledHeader = styled.header`
     padding-right: 2rem;
 `
 
-export const Header = () => {
+export const Nav = () => {
     return (
-        <StyledHeader>
+        <StyledNav>
             <Anchor          
                 href="https://endy.com" 
                 img={endyLogo} />
             <h1>Happy Room Designer (Endy Edition)</h1>
-            <Button label="Instructions" plain />
-        </StyledHeader>
+            <Button label="Instructions" />
+        </StyledNav>
     )
 }
