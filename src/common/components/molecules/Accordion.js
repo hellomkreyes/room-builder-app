@@ -1,33 +1,37 @@
-import React, { Children, useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Button } from '../atoms/Button';
 import styled from 'styled-components'
-import { AccordionHeader } from '../atoms';
+import { AccordionHeader } from '../atoms'
 
 const StyledAccordionContainer = styled.div`
-  display: ${({isAccordionOpen}) => isAccordionOpen ? "block" : "none"};
+  display: ${({ isAccordionOpen }) => (isAccordionOpen ? 'block' : 'none')};
 `
 
 const StyledAccordion = styled.div`
   width: 100%;
 `
 
-
-export const Accordion = ({heading, children}) => {
+export const Accordion = ({ heading, children }) => {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false)
 
   const toggleItem = (index) => {
-    return isAccordionOpen ? setIsAccordionOpen(false) : setIsAccordionOpen(true)
+    return isAccordionOpen
+      ? setIsAccordionOpen(false)
+      : setIsAccordionOpen(true)
   }
 
-	return (
+  return (
     <StyledAccordion>
-      <AccordionHeader onClick={() => toggleItem()} heading={heading} isAccordionOpen={isAccordionOpen}/>
+      <AccordionHeader
+        onClick={() => toggleItem()}
+        heading={heading}
+        isAccordionOpen={isAccordionOpen}
+      />
       <StyledAccordionContainer isAccordionOpen={isAccordionOpen}>
         {children}
       </StyledAccordionContainer>
     </StyledAccordion>
-	);
+  )
 }
 
 Accordion.propTypes = {

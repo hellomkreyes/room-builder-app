@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { Button } from './Button';
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
@@ -12,18 +11,25 @@ const StyledButton = styled.button`
   color: #222;
 
   img {
-    transform: ${({isAccordionOpen}) => isAccordionOpen ? "rotate(0deg)" : "rotate(45deg)"};
-    transition: transform 0.2s ease
+    transform: ${({ isAccordionOpen }) =>
+      isAccordionOpen ? 'rotate(0deg)' : 'rotate(45deg)'};
+    transition: transform 0.2s ease;
   }
-
 `
-export const AccordionHeader = ({onClick, heading, isAccordionOpen}) => {
-	return (
-    <StyledButton onClick={onClick} aria-expanded={isAccordionOpen} isAccordionOpen={isAccordionOpen}>
+export const AccordionHeader = ({ onClick, heading, isAccordionOpen }) => {
+  return (
+    <StyledButton
+      onClick={onClick}
+      aria-expanded={isAccordionOpen}
+      isAccordionOpen={isAccordionOpen}
+    >
       <h2>{heading}</h2>
-      <img src="https://cdn.sanity.io/images/d0kd7r9c/production/7c498bc282aed9b4c6685490068af6f2cc4c2e56-48x48.svg" alt=""/>
+      <img
+        src='https://cdn.sanity.io/images/d0kd7r9c/production/7c498bc282aed9b4c6685490068af6f2cc4c2e56-48x48.svg'
+        alt=''
+      />
     </StyledButton>
-	);
+  )
 }
 
 AccordionHeader.propTypes = {
