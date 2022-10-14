@@ -2,6 +2,7 @@ import { CategoriesDropdown } from '../components/atoms'
 import { RoomViewer } from '../components/organisms'
 import { Toolbar } from '../components/molecules'
 import styled from 'styled-components'
+import { Accordion } from '../components/molecules'
 
 const StyledRoomBuilder = styled.div`
   display: flex;
@@ -31,7 +32,15 @@ export const RoomBuilder = () => {
   return (
     <StyledRoomBuilder>
       <StyledChoiceContainer>
-        <div>Accordion lives here</div>
+        <Accordion heading={'Choose your room'}>
+          <div>Rooms</div>
+        </Accordion>
+        <Accordion heading={'Choose your furniture'}>
+          <div>Furniture</div>
+        </Accordion>
+        <Accordion heading={'Choose your decor'}>
+          <div>Decor</div>
+        </Accordion>
         <CategoriesDropdown type='furniture'>
           <option value='one'>Seating</option>
           <option value='two'>Lighting</option>
